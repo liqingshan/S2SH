@@ -69,6 +69,7 @@ public class ActorGridAction extends ActionSupport {
 	public String execute(){
 		rows=actorservice.getpageActors(current, rowCount);
 		total=actorservice.getAllActors().size();
+		System.out.printf("total %d", total);
 		return "success";
 	}
 }

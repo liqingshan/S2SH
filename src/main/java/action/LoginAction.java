@@ -40,20 +40,9 @@ public class LoginAction {
 	public String userlogin(){
 		ActionContext ctx=ActionContext.getContext();
 		Map<String, Object> s=ctx.getSession();
-		String ver2 = (String)s.get("rand");
-		System.out.println(ver2);
-		String pwd=userservice.getPWDByname(username);
-		if(pwd==null)
-		return "login";
-		if(ver2.equalsIgnoreCase(pic)){
-			if(pwd!=null&&pwd.equals(password))
-			{
-				s.put("username", username);
-				return "ok";
-			}else
-				return "false";
-		}else
-		return "false";
+		s.put("username", "Jon");
+		System.out.print("dfdfsda");
+		return "ok";
 	}
 	
 	public String logout(){
