@@ -1,1 +1,1 @@
-在MacOS上用 maven编译可以通过
+mvn build 可以生成 SSH.war 的包
